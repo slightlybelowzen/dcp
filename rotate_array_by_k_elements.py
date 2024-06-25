@@ -1,6 +1,7 @@
 def solve(nums: list[int], k: int) -> list[int]:
-    i, j = 0, len(nums) - 1
-    return nums
+    # this is the less memory efficient way
+    return nums[k:] + nums[0:k]
+    # i, j = 0, len(nums) - 1
 
 
 if __name__ == "__main__":
