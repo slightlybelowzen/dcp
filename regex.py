@@ -9,7 +9,7 @@ def regex_matcher_only_dot(inp: str, regex: str) -> bool:
 
 
 def regex_matcher(inp: str, regex: str) -> bool:
-    pass
+    i, j = 0
 
 
 if __name__ == "__main__":
