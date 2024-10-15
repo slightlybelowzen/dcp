@@ -1,4 +1,5 @@
 def divisible_triplets(nums: list[int], d: int) -> int:
+    # TODO: still need to finish this
     lo, hi = 0, len(nums) - 1
     for num in nums:
         ...
