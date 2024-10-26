@@ -4,15 +4,20 @@ def main():
     prefix_products = []
     suffix_products = []
     ans = []
+
+    # prefix products array
     for num in nums:
         prefix_products.append(
             num * prefix_products[-1]
         ) if prefix_products else prefix_products.append(num)
+
+    # suffix products array
     for num in reversed(nums):
         suffix_products.append(
             num * suffix_products[-1]
         ) if suffix_products else suffix_products.append(num)
     suffix_products = list(reversed(suffix_products))
+
     for i in range(len(nums)):
         if i == 0:
             ans.append(suffix_products[i + 1])
